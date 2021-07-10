@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uTask 2.0</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="./assents/Logo Definitivo.png" class="logo" alt="logo"></a>
+                <h1>uTask <i>2.0<i></h1>
+                <a class="button-config" href="#"><i class="fas fa-cog"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Body -->
+    <section class="corpo">
+
+        <!-- Caixa de Pesquisa -->
+        <div class="caixa-pesquisa">
+            <input type="text" placeholder="Adicionar Tarefa...">
+            <button class="button-plus"><i class="fas fa-plus-square"></i></button>
+        </div>
+
+        <!-- Box Cards -->
+        <div class="cards">
+
+            <!-- Card ToDo -->
+            <div class="card">
+                <h2>To do</h2>
+                <hr class="hr1"/>
+                <div class="linha-item">
+                    <div class="nome-item">
+                        <p>Fazer Compras</p>
+                    </div>
+                    <div class="botão-item">
+                        <a><i class="fas fa-arrow-circle-right botao-proximo"></i></a>
+                        <a><i class="fas fa-minus-circle botao-menos"></i></a>
+                    </div>
+                </div>
+                <hr class="hr2"/>
+            </div>
+
+            <!-- Card Doing -->
+            <div class="card">
+                <h2>Doing</h2>
+                <hr class="hr1"/>
+                <div class="linha-item">
+                    <div class="nome-item">
+                        <p>Fazer Compras</p>
+                    </div>
+                    <div class="botão-item">
+                        <a><i class="fas fas fa-check-circle botao-ok"></i></a>
+                        <a><i class="fas fa-minus-circle botao-menos"></i></a>
+                    </div>
+                </div>
+                <hr class="hr2"/>
+            </div>
+
+            <!-- Card Done -->
+            <div class="card">
+                <h2>Done</h2>
+                <hr class="hr1"/>
+                <div class="linha-item">
+                    <div class="nome-item">
+                        <p>Fazer Compras</p>
+                    </div>
+                    <div class="botao-item">
+                        <a href="#"><img class="botao-retorno" src="./assents/icons8-restart.svg"/></a>
+                        <a><i class="fas fa-minus-circle botao-menos"></i></a>
+                    </div>
+                </div>
+                <hr class="hr2"/>
+            </div>
+
+        </div>
+    </section>
+
+    
+</body>
+</html>
