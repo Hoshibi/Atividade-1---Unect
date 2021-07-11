@@ -13,9 +13,10 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <!-- Ubuntu -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <!-- Roboto -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
             <nav>
                 <a href="index.html"><img src="./assents/Logo Definitivo.png" class="logo" alt="logo"></a>
                 <h1>uTask <i>2.0<i></h1>
-                <a class="button-config" href="#"><i class="fas fa-cog"></i></a>
+                <a class="button-config" onClick='abrirModal()'><i class="fas fa-cog"></i></a>
             </nav>
         </div>
     </header>
@@ -94,6 +95,30 @@
         </div>
     </section>
 
+    <!-- Modal -->
+    <section id='modal' onClick='fecharModal()'>
+        <div id='content'>
+            <h1>Configuração</h1>
+            <hr/>
+            <div class="darkmode-alinhamento">
+                <p>Dark Mode </p>
+                <div class="toggle">
+                    <input id="switch" type="checkbox" name="theme">
+                    <label for="switch">Toggle</label>
+                </div>
+            </div>
+            
+            <p>Plano de Fundo</p>
+            <input type="text" placeholder="https://">
+            <br>
+            <button>Limpar</button>
+            <button>Aplicar</button>
+        </div>
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="script/modal.js"></script>
     
 </body>
 </html>
