@@ -5,10 +5,10 @@
  
  Arquivos contidos nesse repositório:
  
- - README.md
- - uTask (folder):  - index.html
-                    - style.css
-                    - assents
-                    - script (modal.js, itens.js, wallpaper.js, darkmode.js)
+ uTask (folder):
+ - index.html
+ - style.css
+ - assents
+ - script (modal.js, itens.js, wallpaper.js, darkmode.js)
                     
                     
