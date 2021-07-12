@@ -8,7 +8,8 @@
  uTask (folder):
  - index.html
  - style.css
- - assents
  - script (modal.js, itens.js, wallpaper.js, darkmode.js)
+ - assents
+ 
                     
                     
