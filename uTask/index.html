@@ -26,7 +26,10 @@
         <div class="container">
             <nav>
                 <a href="index.html"><img src="./assents/Logo Definitivo.png" class="logo" alt="logo"></a>
-                <h1>uTask <i>2.0<i></h1>
+                <div class="titulo">
+                    <h1>uTask <i>2.0<i></h1>
+                    <hr id=linha-titulo/>
+                </div>
                 <a class="button-config" onClick='abrirModal()'><i class="fas fa-cog"></i></a>
             </nav>
         </div>
@@ -37,8 +40,8 @@
 
         <!-- Caixa de Pesquisa -->
         <div class="caixa-pesquisa">
-            <input type="text" placeholder="Adicionar Tarefa...">
-            <button class="button-plus"><i class="fas fa-plus-square"></i></button>
+            <input id="input" type="text" placeholder="Adicionar Tarefa...">
+            <button class="button-plus" onClick='add()'><i class="fas fa-plus-square"></i></button>
         </div>
 
         <!-- Box Cards -->
@@ -48,48 +51,23 @@
             <div class="card">
                 <h2>To do</h2>
                 <hr class="hr1"/>
-                <div class="linha-item">
-                    <div class="nome-item">
-                        <p>Fazer Compras</p>
-                    </div>
-                    <div class="botão-item">
-                        <a><i class="fas fa-arrow-circle-right botao-proximo"></i></a>
-                        <a><i class="fas fa-minus-circle botao-menos"></i></a>
-                    </div>
+                <div id="linhas-todo" class="linhas"> 
                 </div>
-                <hr class="hr2"/>
             </div>
 
             <!-- Card Doing -->
             <div class="card">
                 <h2>Doing</h2>
                 <hr class="hr1"/>
-                <div class="linha-item">
-                    <div class="nome-item">
-                        <p>Fazer Compras</p>
-                    </div>
-                    <div class="botão-item">
-                        <a><i class="fas fas fa-check-circle botao-ok"></i></a>
-                        <a><i class="fas fa-minus-circle botao-menos"></i></a>
-                    </div>
-                </div>
-                <hr class="hr2"/>
+                <div id="linhas-doing" class="linhas">
+                </div> 
             </div>
 
             <!-- Card Done -->
             <div class="card">
                 <h2>Done</h2>
                 <hr class="hr1"/>
-                <div class="linha-item">
-                    <div class="nome-item">
-                        <p>Fazer Compras</p>
-                    </div>
-                    <div class="botao-item">
-                        <a href="#"><img class="botao-retorno" src="./assents/icons8-restart.svg"/></a>
-                        <a><i class="fas fa-minus-circle botao-menos"></i></a>
-                    </div>
-                </div>
-                <hr class="hr2"/>
+                <div id="linhas-done" class="linhas">
             </div>
 
         </div>
@@ -100,25 +78,30 @@
         <div id='content'>
             <h1>Configuração</h1>
             <hr/>
-            <div class="darkmode-alinhamento">
+            <div class="alinhamento">
                 <p>Dark Mode </p>
                 <div class="toggle">
-                    <input id="switch" type="checkbox" name="theme">
-                    <label for="switch">Toggle</label>
+                    <input id="darkMode" type="checkbox" name="#darkMode">
+                    <label for="darkMode">Toggle</label>
                 </div>
             </div>
             
             <p>Plano de Fundo</p>
-            <input type="text" placeholder="https://">
-            <br>
-            <button>Limpar</button>
-            <button>Aplicar</button>
+            <input id="imgInput" type="text" placeholder="https://" class="input-imagem">
+            
+            <div class="alinhamento">
+                <button id="button-limpar" onclick="clearImg()">Limpar</button>
+                <button id="button-aplicar" onclick="addImg()">Aplicar</button>
+            </div>
+            
         </div>
     </section>
 
 
     <!-- JavaScript -->
     <script src="script/modal.js"></script>
-    
+    <script src="script/itens.js"></script>
+    <script src="script/darkmode.js"></script>
+    <script src="script/wallpaper.js"></script>
 </body>
 </html>
